@@ -12,12 +12,11 @@
 
     <tallstackui:script />
     @livewireStyles
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
-</head><tallstackui:script />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 
 <body class="font-sans antialiased">
-    <x-tall-toast />
     {{ $slot }}
     @livewireScripts
     @stack('scripts')
